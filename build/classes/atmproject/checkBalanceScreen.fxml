@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atmproject.CheckBalanceScreenController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="697.0">
+         <image>
+            <Image url="@../money.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="168.0" text="Account number" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="218.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="273.0" text="Current balance" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountNo" editable="false" layoutX="333.0" layoutY="163.0" prefHeight="36.0" prefWidth="210.0" />
+      <TextField fx:id="name" editable="false" layoutX="333.0" layoutY="213.0" prefHeight="36.0" prefWidth="210.0" />
+      <TextField fx:id="currentbalance" editable="false" layoutX="333.0" layoutY="268.0" prefHeight="36.0" prefWidth="210.0" />
+      <Button layoutX="626.0" layoutY="521.0" mnemonicParsing="false" onAction="#Backbutton" prefHeight="26.0" prefWidth="57.0" text="Back" />
+   </children>
+</AnchorPane>
